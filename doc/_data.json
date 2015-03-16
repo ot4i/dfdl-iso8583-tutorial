@@ -293,11 +293,6 @@
             }
           ]
         },
-       "actions":{
-          "title": "Run Actions",
-          "details":[
-           ]
-         },
 	"exits":{
 	  "title": "Run Exits",
 	  "details":[
