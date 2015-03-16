@@ -1,0 +1,314 @@
+{
+  "version":"0.5",
+    "pageContent": 
+	{
+        "_comments": "JSON object that contains data for page labels, buttons, etc.",
+        "navItems": 
+		{
+            "_common": 
+			{
+                "buttonBackToGallery": 
+				{
+                    "name": "Back To Gallery",
+					"method": "backToGallery()",
+					"idName": "backToGallery"	
+                },
+                "buttonStartTutorial": 
+				{
+                    "name": "Start Tutorial",
+					"method": "startTutorialFromDetailsScreen()",
+					"idName": "startTutorial"
+                }
+            }
+        }
+    },
+  "tutorial":{
+    "_common":{
+      "name":"Modeling ISO 8583 data using DFDL",
+      "shortDescription":"Learn how to model ISO 8583 data using DFDL by exploring this simple example.",
+      "durationText":"This tutorial takes approximately",
+      "durationTime":"5 minutes",
+      "_resourceToOpenComment":"The ID of the first resource to open when the user imports the tutorial. Resource IDs are defined in the repo_metadata.json Tutorials listing on ot4i.",
+      "resourceToOpen":"MainSchema",
+      "helpLink": 
+	{
+           "text": "IBM Knowledge Center",
+           "link": "/com.ibm.etools.msgbroker.helphome.doc/help_home_msgbroker.htm"
+        }
+    },
+    "pageDetails":{
+      "topicsName":"Tutorial Topics",
+      "_topicListComment":"A short list of product concepts or tasks demonstrated by this tutorial",
+      "topicList":[
+        {
+          "title":"Modeling ISO8583 messages"
+        },
+        {
+          "title":"Editing DFDL schema"
+        },
+        {
+          "title":"Testing DFDL schema"
+        }
+      ],
+      "outcomesName":"Learning outcomes",
+      "_outcomesComment":"A description of what the user will have learned or accomplished by running this tutorial.",
+      "outcomeList":[
+        {
+          "title":"Use the DFDL editor to model and parse ISO 8583 data."
+        }
+      ],
+      "summary":{
+        "overviewName":"OVERVIEW",
+        "_overviewComment":"A short description of what happens in this tutorial, and an optional short explanation of the IIB concepts used in this tutorial if necessary for context. What background knowledge must the user have for this to make sense?",
+        "sections":[
+          {
+            "section":"This tutorial demonstrates the modeling of ISO 8583 data using DFDL schema."
+          }  
+        ]
+      }
+    },
+    "pageSteps":{
+      "concept":{
+        "overview":{
+          "name":"Overview",
+          "heading":"Overview",
+          "_overviewComment":"A short description of what this tutorial does, and what the user will do to run the tutorial.",
+        "sections":[
+          {
+            "section":"ISO 8583 is a message format for representing card-based transactions including ATM and credit card transactions. There are three releases of the standard: 1987, 1993 and 2003."
+          },
+          {
+            "section":"ISO8583 messages consist of a number of optional fixed-length or prefixed-length fields without initiators. The presence of a given field in the message is indicated by the setting of a corresponding bit in a bitmap. The bitmaps occur near the start of the message, and can either be in 'packed' format where each bitmap is encoded as 8 bytes of binary data (8 bits per byte), or in 'unpacked' format where each bitmap is encoded as 16 text characters (4 bits per character)."
+          }
+          ]
+        },
+        "helpLinks":{
+          "title":"Find out more",
+          "details":[
+            {
+              "title":"Knowledge Center link to ",
+              "description":"Message modeling overview",
+              "link":"com.ibm.etools.mft.doc/bd40430_.htm"
+            },
+            {
+              "title":"Knowledge Center link to ",
+              "description":"How to model data with DFDL",
+              "link":"com.ibm.etools.mft.doc/df20125_.htm"
+            },
+            {
+              "title":"Knowledge Center link to ",
+              "description":"ISO8583 messaging standard",
+              "link":"com.ibm.etools.mft.doc/bd34064_.htm"
+            },
+            {
+              "title":"GitHub link to ",
+              "description":"DFDLSchemas ISO8583 repository",
+              "link":"http://dfdlschemas.github.io/ISO8583/",
+              "type":"web"
+            }
+          ]
+        }
+      },
+      "create":{
+        "overview":{
+          "name":"Create",
+          "heading":"Import projects",
+          "_createComment":"A description of what will happen when the user clicks Import.",
+          "sections":[
+            {
+              "section":"A shared library is imported into your workspace."
+            },
+            {
+              "section":"Library ISO8583 contains a set of DFDL schemas that model ISO8583 1987 messages with 'packed' bitmaps."
+            },
+            {
+              "section":"Schema ISO8583_1987.xsd models the overall ISO 8583 message using a set of re-usable types defined in ISO8583Types.xsd. Schema ISO8583Format.xsd defines suitable default values for DFDL properties." 
+            }
+          ]
+        },
+        "helpLinks":{
+          "title":"Find out more",
+          "details":[
+            {
+              "title":"Knowledge Center link to ",
+              "description":"Working with DFDL schema files",
+              "link":"com.ibm.etools.mft.doc/df20061_.htm"
+            }
+          ]
+        },
+       "actions":{
+          "title": "Create Actions",
+          "details":[
+             {
+               "name": "Import",
+               "method": "importArtifacts()"
+             }
+           ]
+         }
+      },
+      "prepare":{
+        "overview":{
+          "name":"Prepare",
+          "heading":"Imported projects",
+          "_prepareComment":"A description of what just happened when the user clicked Import, and what will happen when the user clicks Deploy.",
+          "sections":[
+            {
+              "section":"The ISO8583 library is shown in the Integration Development view of your workspace."
+            },
+            {
+              "section":"DFDL schema ISO8583_1987.xsd should be open for you using the DFDL editor. If it is not, double-click the DFDL schema and the editor will open." 
+            },
+            {
+              "section":"The ISO8583_1987 message is highlighted and models an ISO 8583 message with 'packed' bitmaps. The main editor view shows the logical components of the message such as elements and sequences. You can explore the ISO8583_1987 message structure by expanding the elements." 
+            },
+            {
+              "section":"The physical rendering of each logical component is described by the DFDL properties in the Representation Properties tab on the right. DFDL properties can either be specified locally on the component, or can be inherited from pre-defined sets of DFDL properties. Inherited properties have an icon <img src='http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/dfdlInheritedProperty.png' alt='' /> shown next to them, and hovering over the icon reveals where the property is defined. In this schema, inherited properties are obtained from ISO8583Format.xsd." 
+            },
+            {
+              "section":"The presence or absence of each element in the message is given by a corresponding bit in one of the bitmaps. The DFDL Occurs Count Kind property for each element is set to 'expression', and the Occurs Count property is a DFDL expression that refers to the corresponding bit in the bitmap. You can see this if you select any of the child elements with a numeric suffix, and scroll down the Representation Properties tab until you reach the 'Occurrences' section. The bitmaps themselves can be viewed by expanding the Bitmaps_Group group reference. The secondary bitmap is itself optional and its presence or absence is given by Bit001." 
+            },
+            {
+              "section":"You will be test parsing example ISO 8583 data using the ISO8583_1987 message. The test parsing takes place entirely within the DFDL editor, so there is no message flow in this tutorial and no Deploy step. Before test parsing, switch to the DFDL Test perspective using Window->Open Perspective and choose 'DFDL Test' (or use the toolbar icon <img src='http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/changePerspective.png' alt='' />)." 
+            },
+            {
+              "section":"<b>Tip:</b> If this Tutorial Steps View disappears when you switch perspectives, use Window->Show View to add it back."
+            }
+          ]  
+        },
+        "helpLinks":{
+          "title":"Find out more",
+          "details":[
+            {
+              "title":"Knowledge Center link to ",
+              "description":"Working with DFDL schema files",
+              "link":"com.ibm.etools.mft.doc/df20061_.htm"
+            }
+          ]
+        }
+      },
+      "run":{
+        "overview":{
+          "name":"Run",
+          "heading":"Follow these steps to complete the tutorial",
+          "_runComment":"The full steps for the user to run through the tutorial. Use 'sections' to render paragraphs, 'steps' with a type of 'ordered' or 'unordered' to render HTML lists, and 'substeps' to render nested lists.",
+          "sections":[
+            {
+              "section":"ISO8583_1987.xsd is open in the DFDL editor. The ISO8583_1987 message should be highlighted in green.",
+              "steps":{
+                "type":"ordered",
+                "details":[
+                  {
+                    "details":"Test parse an example data file:",
+                    "substeps":{
+                      "type":"unordered",
+                      "details":[
+                        {
+                          "details":"Click the Test Parse Model button in the DFDL editor toolbar. The Test Parse Model dialog opens."
+                        },
+                        {
+                          "details":"In the Message section, select ISO8583_1987."
+                        },
+                        {
+                          "details":"In the Parser Input section, select 'Content from a data file' and click Browse."
+                        },
+                        {
+                          "details":"Select file ISO8583_1987_Test_Data_1.txt from ISO8583_1987 and click OK."
+                        },
+                        {
+                          "details":"Set the Encoding to ASCII."
+                        },
+                        {
+                          "details":"Click OK. If asked to confirm switching to the DFDL Test perspective, click 'Yes'."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "details":"The results of the test parse are displayed. You should see 'Parsing completed successfully' which can be dismissed."
+                  },
+                  {
+                    "details":"You can view the parsed data file in the <b>DFDL Test - Parse</b> view. The results of the parse can be viewed in the <b>DFDL Test - Logical Instance</b> view, as a tree or as XML. You can view a log of the parser actions in the <b>DFDL Test - Trace</b> view."
+                  },
+                  {
+                    "details":"Test serialize the logical instance that resulted from the parse:",
+                    "substeps":{
+                      "type":"unordered",
+                      "details":[
+                        {
+                          "details":"Click the Test Serialize Model button in the DFDL editor toolbar. The Test Serialize Model dialog opens."
+                        },
+                        {
+                          "details":"In the Serializer Input section, select 'Content from a DFDL Test - Logical Instance'."
+                        },
+                        {
+                          "details":"Set the Encoding to ASCII."
+                        },
+                        {
+                          "details":"Click OK."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "details":"The results of the test serialize are displayed. You should see 'Serialization completed successfully' which can be dismissed."
+                  },
+                  {
+                    "details":"You can view the serialized data file in the <b>DFDL Test - Serialize</b> view. You can view a log of the serializer actions in the <b>DFDL Test - Trace</b> view."
+                  },  
+                  {
+                    "details":"Repeat steps 1 through 6 for another example data file, ISO8583_1987_Test_Data_2.txt. This is a more realistic example and is an example of message type 0200."
+                  },  
+                  {
+                    "details":"As an alternative to the toolbar buttons, you can also test from the <b>DFDL Test - Parse</b> and <b>DFDL Test - Serialize</b> views, using the Browse button to select a data source and the green play icon <img src='http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/dfdlTestPlay.png' alt='' /> to run the DFDL parser or serializer."
+                  }  
+                ]
+              }
+            },  
+            {
+              "section":"The supplied DFDL schemas will parse ISO 8583 1987 messages with 'packed' bitmaps. If you need to parse 1993 messages, or messages with 'unpacked' bitmaps, there are suitable DFDL schemas in the ISO8583 repository of the DFDLSchemas organization on GitHub."
+            },
+            {
+              "section":"The shared library can be deployed to an integration node for use by message flows."
+            } 
+          ]
+        },
+        "helpLinks":{
+          "title":"Find out more",
+          "details":[
+            {
+              "title":"Knowledge Center link to ",
+              "description":"Testing a DFDL schema file",
+              "link":"com.ibm.etools.mft.doc/df20065_.htm"
+            },
+            {
+              "title":"Knowledge Center link to ",
+              "description":"ISO8583 messaging standard",
+              "link":"com.ibm.etools.mft.doc/bd34064_.htm"
+            },
+            {
+              "title":"GitHub link to ",
+              "description":"DFDLSchemas ISO8583 repository",
+              "link":"http://dfdlschemas.github.io/ISO8583/",
+              "type":"web"
+            }
+          ]
+        },
+       "actions":{
+          "title": "Run Actions",
+          "details":[
+           ]
+         },
+	"exits":{
+	  "title": "Run Exits",
+	  "details":[
+	     {
+	     	"name": "Clean Up",
+	     	"description": "Clean up and remove any changes in your workspace made by the tutorial.",
+	     	"method": "cleanUp()"
+	     }
+	   ]
+	 }
+      }
+    }
+  }
+}
