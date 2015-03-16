@@ -127,10 +127,13 @@
 					        
 						    
 								<p> A shared library is imported into your workspace. </p>
+								
 							
 								<p> Library ISO8583 contains a set of DFDL schemas that model ISO8583 1987 messages with 'packed' bitmaps. </p>
+								
 							
 								<p> Schema ISO8583_1987.xsd models the overall ISO 8583 message using a set of re-usable types defined in ISO8583Types.xsd. Schema ISO8583Format.xsd defines suitable default values for DFDL properties. </p>
+								
 							
 						</div>
 						
@@ -165,18 +168,25 @@
 						    
 						    
 								<p> The ISO8583 library is shown in the Integration Development view of your workspace. </p>
+								
 							
 								<p> DFDL schema ISO8583_1987.xsd should be open for you using the DFDL editor. If it is not, double-click the DFDL schema and the editor will open. </p>
+								
 							
 								<p> The ISO8583_1987 message is highlighted and models an ISO 8583 message with 'packed' bitmaps. The main editor view shows the logical components of the message such as elements and sequences. You can explore the ISO8583_1987 message structure by expanding the elements. </p>
+								
 							
 								<p> The physical rendering of each logical component is described by the DFDL properties in the Representation Properties tab on the right. DFDL properties can either be specified locally on the component, or can be inherited from pre-defined sets of DFDL properties. Inherited properties have an icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/dfdlInheritedProperty.png" alt> shown next to them, and hovering over the icon reveals where the property is defined. In this schema, inherited properties are obtained from ISO8583Format.xsd. </p>
+								
 							
 								<p> The presence or absence of each element in the message is given by a corresponding bit in one of the bitmaps. The DFDL Occurs Count Kind property for each element is set to 'expression', and the Occurs Count property is a DFDL expression that refers to the corresponding bit in the bitmap. You can see this if you select any of the child elements with a numeric suffix, and scroll down the Representation Properties tab until you reach the 'Occurrences' section. The bitmaps themselves can be viewed by expanding the Bitmaps_Group group reference. The secondary bitmap is itself optional and its presence or absence is given by Bit001. </p>
+								
 							
 								<p> You will be test parsing example ISO 8583 data using the ISO8583_1987 message. The test parsing takes place entirely within the DFDL editor, so there is no message flow in this tutorial and no Deploy step. Before test parsing, switch to the DFDL Test perspective using Window->Open Perspective and choose 'DFDL Test' (or use the toolbar icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/changePerspective.png" alt>). </p>
+								
 							
 								<p> <b>Tip:</b> If this Tutorial Steps View disappears when you switch perspectives, use Window->Show View to add it back. </p>
+								
 							
 						</div>
 						
@@ -320,7 +330,7 @@
 					<div class="small-2 medium-2 large-2 columns">
 					
 					
-					<hr>
+					
 					
 					
 					<h4 class="tkaction"><a href="javascript:;" onclick="cleanUp()" title="Clean up and remove any changes in your workspace made by the tutorial."> Clean Up <img class="icon-image" src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/ibmdesign/close-cancel-error_128-red.png"></a></h4>
