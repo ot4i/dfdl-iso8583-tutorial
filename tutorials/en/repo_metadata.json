@@ -29,7 +29,7 @@
            				{
        		        	        	"id" : "MainSchema",
        				                "editor" : "dfdl",
-    			  	                "wspath" : "<workspace>/ISO8583/ISO8583_1987.xsd"
+    			  	                "wspath" : "<workspace>/ISO8583/1987/ISO8583_1987.xsd"
        			                }
         		          ],
 		"deployedResources": [
