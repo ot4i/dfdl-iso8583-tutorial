@@ -1,0 +1,10 @@
+{    
+    "main" : {
+      "project" : "ISO8583",
+      "artefact": "1987/ISO8583_1987.xsd",
+      "editor"  : "dfdl"
+    },
+    "bar" : {
+        "build" : false
+    }
+  }
