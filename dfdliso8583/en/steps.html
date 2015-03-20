@@ -24,13 +24,13 @@
 		
 		<title>IBM Integration Bus V10 Tutorial</title>
 
-    	<link rel="stylesheet" href="http://ot4i.github.io/ot4i.tutorials/dist/css/main.css" />
-		<link rel="stylesheet" href="http://ot4i.github.io/ot4i.tutorials/dist/css/app.css" />
+    	<link rel="stylesheet" href="http://ot4i.github.io/iib-tutorials/css/main.css" />
+		<link rel="stylesheet" href="http://ot4i.github.io/iib-tutorials/css/app.css" />
     	
-		<script src="http://ot4i.github.io/ot4i.tutorials/dist/js/json2.js"></script>
-		<script src="http://ot4i.github.io/ot4i.tutorials/dist/js/js2java.js"></script>
-		<script src="http://ot4i.github.io/ot4i.tutorials/dist/js/js2java_steps.js"></script>
-		<script src="http://ot4i.github.io/ot4i.tutorials/dist/js/vendor/modernizr.js"></script>
+		<script src="http://ot4i.github.io/iib-tutorials/js/json2.js"></script>
+		<script src="http://ot4i.github.io/iib-tutorials/js/js2java.js"></script>
+		<script src="http://ot4i.github.io/iib-tutorials/js/js2java_steps.js"></script>
+		<script src="http://ot4i.github.io/iib-tutorials/js/vendor/modernizr.js"></script>
 	</head>
 <!-- header::End -->
 <!-- body::Start -->
@@ -43,7 +43,7 @@
 	</div>
 	<div class="row">
 	  <div class="small-9 medium-9 large-9 columns">
-	    <h4>Modeling ISO 8583 data using DFDL</h4>
+	    <h4>Modeling ISO 8583 data by using DFDL</h4>
 	  </div>
 	  <div class="small-3 medium-3 large-3 columns">
 		<a href="javascript:;" onclick="openHelpSystem('/com.ibm.etools.msgbroker.helphome.doc/help_home_msgbroker.htm')" class="small right helplink">IBM Knowledge Center</a> 
@@ -52,7 +52,7 @@
 	<hr>
 	<div class="row">
 		<div class="small-10 medium-10 large-10 columns">
-		<h5> Learn how to model ISO 8583 data using DFDL by exploring this simple example. </h5>
+		<h5> Learn how to model ISO 8583 data by using Data Format Description Language (DFDL). </h5>
 		</div>
 		<div class="small-2 medium-2 large-2 columns">
 			<div class="small radius button right" id="backToGallery" onclick="backToGallery()"> Back To Gallery
@@ -85,7 +85,7 @@
 						    
 								<p> ISO 8583 is a message format for representing card-based transactions including ATM and credit card transactions. There are three releases of the standard: 1987, 1993 and 2003. </p>
 							
-								<p> ISO8583 messages consist of a number of optional fixed-length or prefixed-length fields without initiators. The presence of a given field in the message is indicated by the setting of a corresponding bit in a bitmap. The bitmaps occur near the start of the message, and can either be in 'packed' format where each bitmap is encoded as 8 bytes of binary data (8 bits per byte), or in 'unpacked' format where each bitmap is encoded as 16 text characters (4 bits per character). </p>
+								<p> ISO 8583 messages consist of a number of optional fixed-length or prefixed-length fields without initiators. The presence of a given field in the message is indicated by the setting of a corresponding bit in a bitmap. The bitmaps occur near the start of the message, and can either be in 'packed' format where each bitmap is encoded as 8 bytes of binary data (8 bits per byte), or in 'unpacked' format where each bitmap is encoded as 16 text characters (4 bits per character). </p>
 							
 						</div>
 							
@@ -126,13 +126,13 @@
 					      	<h4>Import projects</h4>
 					        
 						    
-								<p> A shared library is imported into your workspace. </p>
+								<p> Click <span class="uicontrol">Import</span> and a shared library is imported into your workspace. </p>
 								
 							
-								<p> Library ISO8583 contains a set of DFDL schemas that model ISO8583 1987 messages with 'packed' bitmaps. </p>
+								<p> Library <span class="library">ISO8583</span> contains a set of DFDL schemas that model ISO8583 1987 messages with 'packed' bitmaps. </p>
 								
 							
-								<p> Schema ISO8583_1987.xsd models the overall ISO 8583 message using a set of re-usable types defined in ISO8583Types.xsd. Schema ISO8583Format.xsd defines suitable default values for DFDL properties. </p>
+								<p> The <span class="filepath">ISO8583_1987.xsd</span> schema models the overall ISO 8583 message using a set of re-usable types defined in the <span class="filepath">ISO8583Types.xsd</span>. The <span class="filepath">ISO8583Format.xsd</span> schema defines suitable default values for DFDL properties. </p>
 								
 							
 						</div>
@@ -154,7 +154,7 @@
 					<div class="small-2 medium-2 large-2 columns">
 					
 					
-					<h4 class="tkaction"><a href="javascript:;" onclick="importArtifacts(); openResource('MainSchema')"> Import <img class="icon-image" src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/ibmdesign/back-right-previous_128-orange.png"></a></h4>
+					<h4 class="tkaction"><a href="javascript:;" onclick="importArtifacts(); openResource('MainSchema')"> Import <img class="icon-image" src="http://ot4i.github.io/iib-tutorials/images/icons/ibmdesign/back-right-previous_128-orange.png"></a></h4>
 										
 				    </div>
 					
@@ -164,28 +164,28 @@
 					<div class="small-12 medium-12 large-12 columns">
 					
 						<div class="row content-details">
-						  	<h4>Imported projects</h4>
+						  	<h4>Exploring the schemas</h4>
 						    
 						    
-								<p> The ISO8583 library is shown in the Integration Development view of your workspace. </p>
+								<p> The <span class="library">ISO8583</span> library is shown in the <span class="uicontrol">Application Development</span> view of your workspace. </p>
 								
 							
-								<p> DFDL schema ISO8583_1987.xsd should be open for you using the DFDL editor. If it is not, double-click the DFDL schema and the editor will open. </p>
+								<p> The <span class="filepath">ISO8583_1987.xsd</span> schema opens in the DFDL editor. If it does not open, double-click the DFDL schema to open it in the editor. </p>
 								
 							
 								<p> The ISO8583_1987 message is highlighted and models an ISO 8583 message with 'packed' bitmaps. The main editor view shows the logical components of the message such as elements and sequences. You can explore the ISO8583_1987 message structure by expanding the elements. </p>
 								
 							
-								<p> The physical rendering of each logical component is described by the DFDL properties in the Representation Properties tab on the right. DFDL properties can either be specified locally on the component, or can be inherited from pre-defined sets of DFDL properties. Inherited properties have an icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/dfdlInheritedProperty.png" alt> shown next to them, and hovering over the icon reveals where the property is defined. In this schema, inherited properties are obtained from ISO8583Format.xsd. </p>
+								<p> The physical rendering of each logical component is described by the DFDL properties in the <span class="uicontrol">Representation Properties</span> tab. DFDL properties can either be specified locally on the component, or can be inherited from pre-defined sets of DFDL properties. Inherited properties have an icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/dfdlInheritedProperty.png" alt> shown next to them, and hovering over the icon reveals where the property is defined. In this schema, inherited properties are obtained from the <span class="filepath">ISO8583Format.xsd</span> schema. </p>
 								
 							
-								<p> The presence or absence of each element in the message is given by a corresponding bit in one of the bitmaps. The DFDL Occurs Count Kind property for each element is set to 'expression', and the Occurs Count property is a DFDL expression that refers to the corresponding bit in the bitmap. You can see this if you select any of the child elements with a numeric suffix, and scroll down the Representation Properties tab until you reach the 'Occurrences' section. The bitmaps themselves can be viewed by expanding the Bitmaps_Group group reference. The secondary bitmap is itself optional and its presence or absence is given by Bit001. </p>
+								<p> The presence or absence of each element in the message is given by a corresponding bit in one of the bitmaps. The DFDL <span class="varname">Occurs Count Kind</span> property for each element is set to 'expression', and the DFDL <span class="varname">Occurs Count</span> property is a DFDL expression that refers to the corresponding bit in the bitmap. You can see this if you select any of the child elements with a numeric suffix, and scroll down the <span class="uicontrol">Representation Properties</span> tab until you reach the 'Occurrences' section. The bitmaps themselves can be viewed by expanding the Bitmaps_Group group reference. The secondary bitmap is itself optional and its presence or absence is given by Bit001. </p>
 								
 							
-								<p> You will be test parsing example ISO 8583 data using the ISO8583_1987 message. The test parsing takes place entirely within the DFDL editor, so there is no message flow in this tutorial and no Deploy step. Before test parsing, switch to the DFDL Test perspective using Window->Open Perspective and choose 'DFDL Test' (or use the toolbar icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/changePerspective.png" alt>). </p>
+								<p> You will be test parsing example ISO 8583 data using the ISO8583_1987 message. The test parsing takes place entirely within the DFDL editor, so there is no message flow in this tutorial and no Deploy step. Before test parsing, switch to the <span class="uicontrol">DFDL Test</span> perspective by clicking <span class="uicontrol">Window &gt; Open Perspective</span> and then clicking <span class="uicontrol">DFDL Test</span>. (Alternatively, you can use the toolbar icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/changePerspective.png" alt>). </p>
 								
 							
-								<p> <b>Tip:</b> If this Tutorial Steps View disappears when you switch perspectives, use Window->Show View to add it back. </p>
+								<p> <b>Tip:</b> If this <span class="uicontrol">Tutorial Steps</span> View disappears when you switch perspectives, use the <span class="uicontrol">Window &gt; Show View</span> menu option to add it back. </p>
 								
 							
 						</div>
@@ -213,7 +213,7 @@
 					      	<h4>Follow these steps to complete the tutorial</h4>
 					        
 						    
-								<p> ISO8583_1987.xsd is open in the DFDL editor. The ISO8583_1987 message should be highlighted in green. </p>
+								<p> The <span class="filepath">ISO8583_1987.xsd</span> DFDL schema is open in the DFDL editor. The ISO8583_1987 message should be highlighted in green. </p>
 								
 								
 									
@@ -224,32 +224,32 @@
 										
 										
 											
-											<ul>
+											<ol>
 											
 												
-													<li> Click the Test Parse Model button in the DFDL editor toolbar. The Test Parse Model dialog opens.</li>
+													<li> Click the <span class="uicontrol">Test Parse Model</span> button in the DFDL editor toolbar. The <span class="wintitle">Test Parse Model</span> window opens.</li>
 												
-													<li> In the Message section, select ISO8583_1987.</li>
+													<li> In the Message section, select <span class="uicontrol">ISO8583_1987</span>.</li>
 												
-													<li> In the Parser Input section, select 'Content from a data file' and click Browse.</li>
+													<li> In the Parser Input section, select <span class="uicontrol">Content from a data file</span> then click <span class="uicontrol">Browse</span>.</li>
 												
-													<li> Select file ISO8583_1987_Test_Data_1.txt from ISO8583_1987 and click OK.</li>
+													<li> Select the <span class="filepath">ISO8583_1987_Test_Data_1.txt</span> file from <span class="library">ISO8583_1987</span> then click <span class="uicontrol">OK</span>.</li>
 												
-													<li> Set the Encoding to ASCII.</li>
+													<li> Set the Encoding to <span class="uicontrol">ASCII</span>.</li>
 												
-													<li> Click OK. If asked to confirm switching to the DFDL Test perspective, click 'Yes'.</li>
+													<li> Click <span class="uicontrol">OK</span>. If asked to confirm switching to the <span class="uicontrol">DFDL Test</span> perspective, click <span class="uicontrol">Yes</span>.</li>
 												
 											
-											</ul>
+											</ol>
 											
 										
 										</li>
 									
-										<li> The results of the test parse are displayed. You should see 'Parsing completed successfully' which can be dismissed.
+										<li> The results of the test parse are displayed. You should see the message <span class="systemoutput">Parsing completed successfully</span>. You can dismiss this message.
 										
 										</li>
 									
-										<li> You can view the parsed data file in the <b>DFDL Test - Parse</b> view. The results of the parse can be viewed in the <b>DFDL Test - Logical Instance</b> view, as a tree or as XML. You can view a log of the parser actions in the <b>DFDL Test - Trace</b> view.
+										<li> You can view the parsed data file in the <span class="uicontrol">DFDL Test - Parse</span> view. The results of the parse can be viewed in the <span class="uicontrol">DFDL Test - Logical Instance</span> view, as a tree or as XML. You can view a log of the parser actions in the <span class="uicontrol">DFDL Test - Trace</span> view.
 										
 										</li>
 									
@@ -257,36 +257,36 @@
 										
 										
 											
-											<ul>
+											<ol>
 											
 												
-													<li> Click the Test Serialize Model button in the DFDL editor toolbar. The Test Serialize Model dialog opens.</li>
+													<li> Click the <span class="uicontrol">Test Serialize Model</span> button in the DFDL editor toolbar. The <span class="wintitle">Test Serialize Model</span> window opens.</li>
 												
-													<li> In the Serializer Input section, select 'Content from a DFDL Test - Logical Instance'.</li>
+													<li> In the Serializer Input section, select <span class="uicontrol">Content from a DFDL Test - Logical Instance</span>.</li>
 												
-													<li> Set the Encoding to ASCII.</li>
+													<li> Set the Encoding to <span class="uicontrol">ASCII</span>.</li>
 												
-													<li> Click OK.</li>
+													<li> Click <span class="uicontrol">OK</span>.</li>
 												
 											
-											</ul>
+											</ol>
 											
 										
 										</li>
 									
-										<li> The results of the test serialize are displayed. You should see 'Serialization completed successfully' which can be dismissed.
+										<li> The results of the test serialize are displayed. You should see the message <span class="systemoutput">Serialization completed successfully</span>. You can dismiss this message.
 										
 										</li>
 									
-										<li> You can view the serialized data file in the <b>DFDL Test - Serialize</b> view. You can view a log of the serializer actions in the <b>DFDL Test - Trace</b> view.
+										<li> You can view the serialized data file in the <span class="uicontrol">DFDL Test - Serialize</span> view. You can view a log of the serializer actions in the <span class="uicontrol">DFDL Test - Trace</span> view.
 										
 										</li>
 									
-										<li> Repeat steps 1 through 6 for another example data file, ISO8583_1987_Test_Data_2.txt. This is a more realistic example and is an example of message type 0200.
+										<li> Repeat steps 1 through 6 for the <span class="filepath">ISO8583_1987_Test_Data_2.txt</span> example data file. This is an example of message type 0200.
 										
 										</li>
 									
-										<li> As an alternative to the toolbar buttons, you can also test from the <b>DFDL Test - Parse</b> and <b>DFDL Test - Serialize</b> views, using the Browse button to select a data source and the green play icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/dfdlTestPlay.png" alt> to run the DFDL parser or serializer.
+										<li> As an alternative to the toolbar buttons, you can also test from the <span class="uicontrol">DFDL Test - Parse</span> and <span class="uicontrol">DFDL Test - Serialize</span> views, using the <span class="uicontrol">Browse</span> button to select a data source and the green play icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/dfdlTestPlay.png" alt> to run the DFDL parser or serializer.
 										
 										</li>
 									
@@ -333,7 +333,7 @@
 					
 					
 					
-					<h4 class="tkaction"><a href="javascript:;" onclick="cleanUp()" title="Clean up and remove any changes in your workspace made by the tutorial."> Clean Up <img class="icon-image" src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/ibmdesign/close-cancel-error_128-red.png"></a></h4>
+					<h4 class="tkaction"><a href="javascript:;" onclick="cleanUp()" title="Clean up and remove any changes in your workspace made by the tutorial."> Clean Up <img class="icon-image" src="http://ot4i.github.io/iib-tutorials/images/icons/ibmdesign/close-cancel-error_128-red.png"></a></h4>
 				    
 					
 				    </div>
@@ -342,9 +342,9 @@
 			</div> <!-- tab-content -->
 		</div> <!-- columns -->
 	  </div> <!-- row --></body>
-		<script src="http://ot4i.github.io/ot4i.tutorials/dist/js/vendor/jquery.js"></script>
-		<script src="http://ot4i.github.io/ot4i.tutorials/dist/js/vendor/foundation.min.js"></script>
-		<script src="http://ot4i.github.io/ot4i.tutorials/dist/js/main.js"></script>
+		<script src="http://ot4i.github.io/iib-tutorials/js/vendor/jquery.js"></script>
+		<script src="http://ot4i.github.io/iib-tutorials/js/vendor/foundation.min.js"></script>
+		<script src="http://ot4i.github.io/iib-tutorials/js/main.js"></script>
 	</body>
 <!-- body::End -->
 
