@@ -78,7 +78,7 @@
           },
           {
             "section":"The DFDL schema editor is used to view the model and parse example ISO 8583 data files."
-          },  
+          }
         ]
       }
     },
