@@ -43,7 +43,7 @@
 	</div>
 	<div class="row">
 	  <div class="small-9 medium-9 large-9 columns">
-	    <h4>Modeling ISO 8583 data by using DFDL</h4>
+	    <h4 class="title">Modeling ISO 8583 data by using DFDL <action><div class="small radius button" id="stepsViewDetails" onclick="viewDetails()"> View Details</div> </action></h4>
 	  </div>
 	  <div class="small-3 medium-3 large-3 columns">
 		<a href="javascript:;" onclick="openHelpSystem('/com.ibm.etools.msgbroker.helphome.doc/help_home_msgbroker.htm')" class="small right helplink">IBM Knowledge Center</a> 
@@ -62,10 +62,7 @@
 	<div class="row">          
 		  <div class="small-12 medium-12 large-12 columns">
 			<ul class="tabs vertical"> 
-				<li class="tab-title tab-title-small active"> 
-				  <a href="javascript:;" onclick="show('panel11')">Overview</a>
-				</li>
-				<li class="tab-title tab-title-small">
+				<li class="tab-title tab-title-small active">
 				  <a href="javascript:;" onclick="show('panel21')">Create</a> 
 				</li>
 				<li class="tab-title tab-title-small">
@@ -77,48 +74,7 @@
 			</ul>
 			<!-- editing -->
 			<div class="tabs-content panel-thin-blue vertical"> 
-			    <div class="content active" id="panel11">
-			    	<div class="small-12 medium-12 large-12 columns">
-				    	<div class="row content-details">
-					      	<h4>Overview</h4>
-					        
-						    
-								<p> ISO 8583 is a message format for representing card-based transactions including ATM and credit card transactions. There are three releases of the standard: 1987, 1993 and 2003. </p>
-							
-								<p> ISO 8583 messages consist of a number of optional fixed-length or prefixed-length fields without initiators. The presence of a given field in the message is indicated by the setting of a corresponding bit in a bitmap. The bitmaps occur near the start of the message, and can either be in 'packed' format where each bitmap is encoded as 8 bytes of binary data (8 bits per byte), or in 'unpacked' format where each bitmap is encoded as 16 text characters (4 bits per character). </p>
-							
-						</div>
-							
-						<div class="row content-details">
-							<h4>Find out more</h4>
-							<ul>
-							
-								
-																
-								<li> <a href="javascript:;" onclick="openHelpSystem('/com.ibm.etools.mft.doc/bd40430_.htm')" title="Knowledge Center link to Message modeling overview">Message modeling overview</a> </li>
-							   	
-							
-								
-																
-								<li> <a href="javascript:;" onclick="openHelpSystem('/com.ibm.etools.mft.doc/df20125_.htm')" title="Knowledge Center link to How to model data with DFDL">How to model data with DFDL</a> </li>
-							   	
-							
-								
-																
-								<li> <a href="javascript:;" onclick="openHelpSystem('/com.ibm.etools.mft.doc/bd34064_.htm')" title="Knowledge Center link to ISO8583 messaging standard">ISO8583 messaging standard</a> </li>
-							   	
-							
-								
-								
-								<li> <a href="http://dfdlschemas.github.io/ISO8583/" title="GitHub link to  DFDLSchemas ISO8583 repository">DFDLSchemas ISO8583 repository</a> </li>
-									
-							
-							</ul>
-						</div>	
-							
-					</div>
-				</div>
-		    	<div class="content" id="panel21">
+		    	<div class="content active" id="panel21">
 		    		
 		    		<div class="small-10 medium-10 large-10 columns divider">
 					
@@ -143,8 +99,23 @@
 							
 								
 																
-								<li> <a href="javascript:;" onclick="openHelpSystem('/com.ibm.etools.mft.doc/df20061_.htm')" title="Knowledge Center link to Working with DFDL schema files">Working with DFDL schema files</a> </li>
+								<li> <a href="javascript:;" onclick="openHelpSystem('/com.ibm.etools.mft.doc/bd40430_.htm')" title="Knowledge Center link to Message modeling overview">Message modeling overview</a> </li>
 							   	
+							
+								
+																
+								<li> <a href="javascript:;" onclick="openHelpSystem('/com.ibm.etools.mft.doc/df20125_.htm')" title="Knowledge Center link to How to model data with DFDL">How to model data with DFDL</a> </li>
+							   	
+							
+								
+																
+								<li> <a href="javascript:;" onclick="openHelpSystem('/com.ibm.etools.mft.doc/bd34064_.htm')" title="Knowledge Center link to ISO8583 messaging standard">ISO8583 messaging standard</a> </li>
+							   	
+							
+								
+								
+								<li> <a href="javascript:;" onclick="openExternalBrowser('http://dfdlschemas.github.io/ISO8583/')" title="GitHub link to  DFDLSchemas ISO8583 repository">DFDLSchemas ISO8583 repository</a> </li>
+									
 							
 							</ul>
 						</div>
@@ -319,7 +290,7 @@
 							
 								
 								
-								<li> <a href="http://dfdlschemas.github.io/ISO8583/" title="GitHub link to  DFDLSchemas ISO8583 repository">DFDLSchemas ISO8583 repository</a> </li>
+								<li> <a href="javascript:;" onclick="openExternalBrowser('http://dfdlschemas.github.io/ISO8583/')" title="GitHub link to  DFDLSchemas ISO8583 repository">DFDLSchemas ISO8583 repository</a> </li>
 									
 							
 							</ul>

@@ -46,7 +46,7 @@
       <h4>Modeling ISO 8583 data by using DFDL</h4>
     </div>
     <div class="small-3 medium-3 large-3 columns"> 
-      <a href="javascript:;" onclick="openHelpSystem('/com.ibm.etools.msgbroker.helphome.doc/help_home_msgbroker.htm')" class="small right helplink">IBM Knowledge Center</a>
+      <!--a href="javascript:;" onclick="openHelpSystem('/com.ibm.etools.msgbroker.helphome.doc/help_home_msgbroker.htm');" class="small right helplink">IBM Knowledge Center</a-->
     </div>
   </div> 
   <hr>
@@ -63,7 +63,13 @@
       <div class="row">
       
         
-        <p> This tutorial demonstrates the modeling of ISO 8583 data using DFDL schema. The DFDL schema editor is used to view the model and parse example ISO 8583 data files. </p>
+        <p> This tutorial demonstrates the modeling of ISO 8583 data by using DFDL schema. </p>
+      
+        <p> ISO 8583 is a message format for representing card-based transactions including ATM and credit card transactions. There are three releases of the standard: 1987, 1993 and 2003. </p>
+      
+        <p> ISO 8583 messages consist of a number of optional fixed-length or prefixed-length fields without initiators. The presence of a given field in the message is indicated by the setting of a corresponding bit in a bitmap. The bitmaps occur near the start of the message, and can either be in &#39;packed&#39; format where each bitmap is encoded as 8 bytes of binary data (8 bits per byte), or in &#39;unpacked&#39; format where each bitmap is encoded as 16 text characters (4 bits per character). </p>
+      
+        <p> The DFDL schema editor is used to view the model and parse example ISO 8583 data files. </p>
       
       </div>
     </div><!-- End Columns -->
