@@ -80,6 +80,32 @@
             "section":"The DFDL schema editor is used to view the model and parse example ISO 8583 data files."
           }
         ]
+      },
+      "helpLinks":{
+          "title":"Find out more",
+          "details":[
+            {
+              "title":"Knowledge Center link to ",
+              "description":"Message modeling overview",
+              "link":"com.ibm.etools.mft.doc/bd40430_.htm"
+            },
+            {
+              "title":"Knowledge Center link to ",
+              "description":"How to model data with DFDL",
+              "link":"com.ibm.etools.mft.doc/df20125_.htm"
+            },
+            {
+              "title":"Knowledge Center link to ",
+              "description":"ISO8583 messaging standard",
+              "link":"com.ibm.etools.mft.doc/bd34064_.htm"
+            },
+            {
+              "title":"GitHub link to ",
+              "description":"DFDLSchemas ISO8583 repository",
+              "link":"http://dfdlschemas.github.io/ISO8583/",
+              "type":"web"
+            }
+          ]
       }
     },
     "pageSteps":{
@@ -123,6 +149,11 @@
               "description":"DFDLSchemas ISO8583 repository",
               "link":"http://dfdlschemas.github.io/ISO8583/",
               "type":"web"
+            },
+            {
+              "title":"Knowledge Center link to ",
+              "description":"Working with DFDL schema files",
+              "link":"com.ibm.etools.mft.doc/df20061_.htm"
             }
           ]
         },
