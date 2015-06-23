@@ -18,7 +18,7 @@
 	*
 	***********************************************************************
 	*
-	* Version 1.3 	ISO8583Types.xsd
+	* Version 1.4 	ISO8583Types.xsd
 	*
 	* This DFDL schema is for use with the IIB v10 DFDL ISO8583 tutorial.
 	*
@@ -156,11 +156,12 @@
 		<xs:restriction base="xs:decimal"/>
 	</xs:simpleType>
 	
-	<xs:simpleType name="Type_n_dateTime" dfdl:calendarPattern="MMddHHmmss" dfdl:calendarPatternKind="explicit">
-		<xs:restriction base="xs:dateTime"/>
+	<!-- Not full dateTime so use numeric string: dfdl:calendarPattern="MMddHHmmss" dfdl:calendarPatternKind="explicit" -->
+	<xs:simpleType name="Type_n_dateTimeNoYear">
+		<xs:restriction base="tns:Type_n_string"/>
 	</xs:simpleType>
 	
-	<xs:simpleType name="Type_n_yearDateTime" dfdl:calendarPattern="yyMMddHHmmss" dfdl:calendarPatternKind="explicit">
+	<xs:simpleType name="Type_n_dateTime" dfdl:calendarPattern="yyMMddHHmmss" dfdl:calendarPatternKind="explicit">
 		<xs:restriction base="xs:dateTime"/>
 	</xs:simpleType>
 	
@@ -168,15 +169,17 @@
 		<xs:restriction base="xs:time"/>
 	</xs:simpleType>
 	
-	<xs:simpleType name="Type_n_monthDay" dfdl:calendarPattern="MMdd" dfdl:calendarPatternKind="explicit">
-		<xs:restriction base="xs:date"/>
+	<!-- Not full date so use numeric string: dfdl:calendarPattern="MMdd" dfdl:calendarPatternKind="explicit" -->
+	<xs:simpleType name="Type_n_monthDay">
+		<xs:restriction base="tns:Type_n_string"/>
 	</xs:simpleType>
 	
-	<xs:simpleType name="Type_n_yearMonth" dfdl:calendarPattern="yyMM" dfdl:calendarPatternKind="explicit">
-		<xs:restriction base="xs:date"/>
+	<!-- Not full date so use numeric string: dfdl:calendarPattern="yyMM" dfdl:calendarPatternKind="explicit" -->
+	<xs:simpleType name="Type_n_yearMonth">
+		<xs:restriction base="tns:Type_n_string"/>
 	</xs:simpleType>
 	
-	<xs:simpleType name="Type_n_yearMonthDay" dfdl:calendarPattern="yyMMdd" dfdl:calendarPatternKind="explicit">
+	<xs:simpleType name="Type_n_date" dfdl:calendarPattern="yyMMdd" dfdl:calendarPatternKind="explicit">
 		<xs:restriction base="xs:date"/>
 	</xs:simpleType>
 	
