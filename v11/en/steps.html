@@ -24,13 +24,13 @@
 		
 		<title>IBM Integration Bus V10 Tutorial</title>
 
-    	<link rel="stylesheet" href="http://ot4i.github.io/iib-tutorials/css/main.css" />
-		<link rel="stylesheet" href="http://ot4i.github.io/iib-tutorials/css/app.css" />
+    	<link rel="stylesheet" href="https://ot4i.github.io/iib-tutorials/css/main.css" />
+		<link rel="stylesheet" href="https://ot4i.github.io/iib-tutorials/css/app.css" />
     	
-		<script src="http://ot4i.github.io/iib-tutorials/js/json2.js"></script>
-		<script src="http://ot4i.github.io/iib-tutorials/js/js2java.js"></script>
-		<script src="http://ot4i.github.io/iib-tutorials/js/js2java_steps.js"></script>
-		<script src="http://ot4i.github.io/iib-tutorials/js/vendor/modernizr.js"></script>
+		<script src="https://ot4i.github.io/iib-tutorials/js/json2.js"></script>
+		<script src="https://ot4i.github.io/iib-tutorials/js/js2java.js"></script>
+		<script src="https://ot4i.github.io/iib-tutorials/js/js2java_steps.js"></script>
+		<script src="https://ot4i.github.io/iib-tutorials/js/vendor/modernizr.js"></script>
 	</head>
 <!-- header::End -->
 <!-- body::Start -->
@@ -130,7 +130,7 @@
 					<div class="small-2 medium-2 large-2 columns">
 					
 					
-					<h4 class="tkaction"><a href="javascript:;" onclick="importArtifacts(); openResource('MainSchema')"> Import <img class="icon-image" src="http://ot4i.github.io/iib-tutorials/images/icons/ibmdesign/back-right-previous_128-orange.png"></a></h4>
+					<h4 class="tkaction"><a href="javascript:;" onclick="importArtifacts(); openResource('MainSchema')"> Import <img class="icon-image" src="https://ot4i.github.io/iib-tutorials/images/icons/ibmdesign/back-right-previous_128-orange.png"></a></h4>
 										
 				    </div>
 					
@@ -152,13 +152,13 @@
 								<p> The ISO8583_1987 message is highlighted and models an ISO 8583 message with 'packed' bitmaps. The main editor view shows the logical components of the message such as elements and sequences. You can explore the ISO8583_1987 message structure by expanding the elements. </p>
 								
 							
-								<p> The physical rendering of each logical component is described by the DFDL properties in the <span class="uicontrol">Representation Properties</span> tab. DFDL properties can either be specified locally on the component, or can be inherited from pre-defined sets of DFDL properties. Inherited properties have an icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/dfdlInheritedProperty.png" alt> shown next to them, and hovering over the icon reveals where the property is defined. In this schema, inherited properties are obtained from the <span class="filepath">ISO8583Format.xsd</span> schema. </p>
+								<p> The physical rendering of each logical component is described by the DFDL properties in the <span class="uicontrol">Representation Properties</span> tab. DFDL properties can either be specified locally on the component, or can be inherited from pre-defined sets of DFDL properties. Inherited properties have an icon <img src="https://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/dfdlInheritedProperty.png" alt> shown next to them, and hovering over the icon reveals where the property is defined. In this schema, inherited properties are obtained from the <span class="filepath">ISO8583Format.xsd</span> schema. </p>
 								
 							
 								<p> The presence or absence of each element in the message is given by a corresponding bit in one of the bitmaps. The DFDL <span class="varname">Occurs Count Kind</span> property for each element is set to 'expression', and the DFDL <span class="varname">Occurs Count</span> property is a DFDL expression that refers to the corresponding bit in the bitmap. You can see this if you select any of the child elements with a numeric suffix, and scroll down the <span class="uicontrol">Representation Properties</span> tab until you reach the 'Occurrences' section. The bitmaps themselves can be viewed by expanding the Bitmaps_Group group reference. The secondary bitmap is itself optional and its presence or absence is given by Bit001. </p>
 								
 							
-								<p> You will be test parsing example ISO 8583 data using the ISO8583_1987 message. The test parsing takes place entirely within the DFDL editor, so there is no message flow in this tutorial and no Deploy step. Before test parsing, switch to the <span class="uicontrol">DFDL Test</span> perspective by clicking <span class="uicontrol">Window &gt; Open Perspective</span> and then clicking <span class="uicontrol">DFDL Test</span>. (Alternatively, you can use the toolbar icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/changePerspective.png" alt>). </p>
+								<p> You will be test parsing example ISO 8583 data using the ISO8583_1987 message. The test parsing takes place entirely within the DFDL editor, so there is no message flow in this tutorial and no Deploy step. Before test parsing, switch to the <span class="uicontrol">DFDL Test</span> perspective by clicking <span class="uicontrol">Window &gt; Open Perspective</span> and then clicking <span class="uicontrol">DFDL Test</span>. (Alternatively, you can use the toolbar icon <img src="https://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/changePerspective.png" alt>). </p>
 								
 							
 								<p> <b>Tip:</b> If this <span class="uicontrol">Tutorial Steps</span> View disappears when you switch perspectives, use the <span class="uicontrol">Window &gt; Show View</span> menu option to add it back. </p>
@@ -262,7 +262,7 @@
 										
 										</li>
 									
-										<li> As an alternative to the toolbar buttons, you can also test from the <span class="uicontrol">DFDL Test - Parse</span> and <span class="uicontrol">DFDL Test - Serialize</span> views, using the <span class="uicontrol">Browse</span> button to select a data source and the green play icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/dfdlTestPlay.png" alt> to run the DFDL parser or serializer.
+										<li> As an alternative to the toolbar buttons, you can also test from the <span class="uicontrol">DFDL Test - Parse</span> and <span class="uicontrol">DFDL Test - Serialize</span> views, using the <span class="uicontrol">Browse</span> button to select a data source and the green play icon <img src="https://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/dfdlTestPlay.png" alt> to run the DFDL parser or serializer.
 										
 										</li>
 									
@@ -309,7 +309,7 @@
 					
 					
 					
-					<h4 class="tkaction"><a href="javascript:;" onclick="cleanUp()" title="Clean up and remove any changes in your workspace made by the tutorial."> Clean Up <img class="icon-image" src="http://ot4i.github.io/iib-tutorials/images/icons/ibmdesign/close-cancel-error_128-red.png"></a></h4>
+					<h4 class="tkaction"><a href="javascript:;" onclick="cleanUp()" title="Clean up and remove any changes in your workspace made by the tutorial."> Clean Up <img class="icon-image" src="https://ot4i.github.io/iib-tutorials/images/icons/ibmdesign/close-cancel-error_128-red.png"></a></h4>
 				    
 					
 				    </div>
@@ -318,9 +318,9 @@
 			</div> <!-- tab-content -->
 		</div> <!-- columns -->
 	  </div> <!-- row --></body>
-		<script src="http://ot4i.github.io/iib-tutorials/js/vendor/jquery.js"></script>
-		<script src="http://ot4i.github.io/iib-tutorials/js/vendor/foundation.min.js"></script>
-		<script src="http://ot4i.github.io/iib-tutorials/js/main.js"></script>
+		<script src="https://ot4i.github.io/iib-tutorials/js/vendor/jquery.js"></script>
+		<script src="https://ot4i.github.io/iib-tutorials/js/vendor/foundation.min.js"></script>
+		<script src="https://ot4i.github.io/iib-tutorials/js/main.js"></script>
 	</body>
 <!-- body::End -->
 
