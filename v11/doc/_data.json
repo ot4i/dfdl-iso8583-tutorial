@@ -87,18 +87,21 @@
             {
               "title":"Knowledge Center link to ",
               "description":"Message modeling overview",
-              "link":"com.ibm.etools.mft.doc/bd40430_.htm"
+              "link":"https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.etools.mft.doc/bd40430_.html",
+              "type":"web"
             },
             {
               "title":"Knowledge Center link to ",
               "description":"How to model data with DFDL",
-              "link":"com.ibm.etools.mft.doc/df20125_.htm"
+              "link":"https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.etools.mft.doc/df20125_.htm",
+			  "type":"web"
             },
             {
               "title":"Knowledge Center link to ",
               "description":"ISO8583 messaging standard",
-              "link":"com.ibm.etools.mft.doc/bd34064_.htm"
-            },
+              "link":"https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.etools.mft.doc/bd34064_.htm",
+              "type":"web"
+			},
             {
               "title":"GitHub link to ",
               "description":"DFDLSchemas ISO8583 repository",
@@ -132,17 +135,20 @@
             {
               "title":"Knowledge Center link to ",
               "description":"Message modeling overview",
-              "link":"com.ibm.etools.mft.doc/bd40430_.htm"
-            },
+              "link":"https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.etools.mft.doc/bd40430_.htm",
+              "type":"web"
+			},
             {
               "title":"Knowledge Center link to ",
               "description":"How to model data with DFDL",
-              "link":"com.ibm.etools.mft.doc/df20125_.htm"
+              "link":"https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.etools.mft.doc/df20125_.htm",
+              "type":"web"				
             },
             {
               "title":"Knowledge Center link to ",
               "description":"ISO8583 messaging standard",
-              "link":"com.ibm.etools.mft.doc/bd34064_.htm"
+              "link":"https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.etools.mft.doc/bd34064_.htm",
+              "type":"web"			
             },
             {
               "title":"GitHub link to ",
@@ -153,7 +159,8 @@
             {
               "title":"Knowledge Center link to ",
               "description":"Working with DFDL schema files",
-              "link":"com.ibm.etools.mft.doc/df20061_.htm"
+              "link":"https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.etools.mft.doc/df20061_.htm",
+              "type":"web"							
             }
           ]
         },
@@ -202,7 +209,8 @@
             {
               "title":"Knowledge Center link to ",
               "description":"Working with DFDL schema files",
-              "link":"com.ibm.etools.mft.doc/df20061_.htm"
+              "link":"https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.etools.mft.doc/df20061_.htm",
+              "type":"web"											
             }
           ]
         }
@@ -299,12 +307,14 @@
             {
               "title":"Knowledge Center link to ",
               "description":"Testing a DFDL schema file",
-              "link":"com.ibm.etools.mft.doc/df20065_.htm"
-            },
+              "link":"https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.etools.mft.doc/df20065_.htm",
+              "type":"web"											
+			},
             {
               "title":"Knowledge Center link to ",
               "description":"ISO8583 messaging standard",
-              "link":"com.ibm.etools.mft.doc/bd34064_.htm"
+              "link":"https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.etools.mft.doc/bd34064_.htm",
+              "type":"web"							
             },
             {
               "title":"GitHub link to ",
